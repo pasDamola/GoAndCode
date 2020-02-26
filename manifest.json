@@ -1,14 +1,22 @@
 {
-    "manifest_version": 2,
-    "name": "GoAndCode",
-    "version": "1.0",
-    "description" : "Don't get distracted with social media during your time of work",
-    "permissions": ["activeTab"],
-    "content_scripts": [
-      {
-        "matches": ["https://twitter.com/"],
-        "run_at": "document_idle",
-        "js": ["./main.js"]
-      }
-    ]
+  "manifest_version": 2,
+  "name": "GoAndCode",
+  "version": "1.0",
+  "description": "Don't get distracted with social media during your time of work",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/"],
+      "run_at": "document_idle",
+      "js": ["./main.js"]
+    },
+    {
+      "matches": ["https://youtube.com/"],
+      "run_at": "document_idle",
+      "js": ["./youtube.js"]
+    }
+  ],
+  "icons": {
+    "48": "code-solid.png"
   }
+}

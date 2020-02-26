@@ -1,2 +1,3 @@
-let root = document.getElementById("react-root");
-root.parentNode.removeChild(root);
+let twitterRoot = document.getElementById("react-root");
+twitterRoot.parentNode.removeChild(twitterRoot);
+
