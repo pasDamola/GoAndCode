@@ -1,4 +1,3 @@
-//twitter
 let body = $('body');
 body.empty();
 let image = document.createElement("img");

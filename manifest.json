@@ -6,7 +6,7 @@
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://twitter.com/","https://youtube.com/"],
+      "matches": ["https://*/*"],
       "run_at": "document_idle",
       "js": ["jquery.min.js", "./main.js"]
     }
