@@ -6,14 +6,9 @@
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://twitter.com/"],
+      "matches": ["https://twitter.com/","https://youtube.com/"],
       "run_at": "document_idle",
-      "js": ["./main.js"]
-    },
-    {
-      "matches": ["https://youtube.com/"],
-      "run_at": "document_idle",
-      "js": ["./youtube.js"]
+      "js": ["jquery.min.js", "./main.js"]
     }
   ],
   "icons": {
